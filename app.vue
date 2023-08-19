@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden  h-screen  bg-slate-800  text-slate-100">
+    <div class="overflow-hidden  h-screen  bg-slate-800  text-slate-100  touch-none">
         <header class="flex  items-center  justify-between  p-6  border-b  border-slate-700">
             <HeaderElements />
             <HeaderActions />
