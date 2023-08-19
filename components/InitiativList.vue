@@ -9,8 +9,8 @@ export default {
 </script>
 
 <template>
-    <div class="p-6  border-2  border-slate-700">
-        <h2 class="mb-6  text-2xl  font-bold">Initiativ</h2>
+    <div class="grow  p-6">
+        <h2 class="mb-6  text-xl  font-bold">Initiativ</h2>
 
         <div class="flex  flex-col  gap-4">
             <div v-for="(unit, index) in initiativ.units" class="flex  gap-2  transition-all" :style="{ order: unit.initiativ }">
