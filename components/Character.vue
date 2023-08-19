@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-    <div class="grow  space-y-3  min-h-[calc(100vh-113px)]  p-6">
+    <div class="grow  space-y-3  p-6">
         <h3 class="text-xl  font-bold  text-center">{{ name }}</h3>
 
         <div class="flex  items-center  justify-center  text-red-500">
