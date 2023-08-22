@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-    <div class="w-1/5  space-y-3  p-6">
+    <div class="grow  space-y-3  p-6">
         <h3 class="text-xl  font-bold  text-center">{{ name }}</h3>
 
         <div class="flex  items-center  justify-center  text-red-500">
@@ -58,9 +58,9 @@ export default {
         </div>
 
         <div class="pt-3">
-            <div class="grid   gap-2">
-                <button type="button" v-for="(applies, condition) in conditions" @click="conditions[condition] = !applies" class="p-2  pb-2.5  border  touch-none  transition" :class="{ 'text-slate-500  border-slate-700': !applies, 'bg-slate-200  text-slate-700  border-slate-200': applies }">
-                    <span class="uppercase  text-xs  tracking-wide  font-bold  leading-none">{{ condition }}</span>
+            <div class="flex  flex-wrap  items-center  justify-center">
+                <button type="button" v-for="(applies, condition) in conditions" @click="conditions[condition] = !applies" class="w-24  p-2  touch-none  transition" :class="{ 'grayscale  opacity-30': !applies }">
+                    <img :src="'/conditions/' + condition + '.svg'" class="">
                 </button>
             </div>
         </div>

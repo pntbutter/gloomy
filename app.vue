@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div class="">
-        <header class="flex  items-center  justify-between  px-6  py-3  border-b  border-slate-700">
+        <header class="flex  items-center  justify-between  pl-4  pr-6  py-2  border-b  border-slate-700">
             <HeaderElements />
             <HeaderActions />
         </header>

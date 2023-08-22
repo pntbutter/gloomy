@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <div class="relative  w-2/5  p-6">
+    <div class="relative  grow  p-6  min-w-[30%]">
         <header class="flex  items-center  justify-between  mb-6">
             <h2 class="text-xl  font-bold">Initiative</h2>
 
@@ -31,7 +31,7 @@ export default {
             <div v-for="(unit, index) in initiative.units" class="flex  items-center  gap-2" :style="{ order: unit.initiative }">
                 <span class="mr-auto  text-xl">{{ unit.name }}</span>
 
-                <input type="number" v-model="unit.initiative" min="1" max="99" class="w-24  px-4  py-2  bg-slate-900  rounded  text-xl  text-center">
+                <input type="number" v-model="unit.initiative" min="1" max="99" class="w-16  px-4  py-2  bg-slate-900  rounded  text-xl  text-center">
             </div>
         </div>
 
