@@ -1,21 +1,21 @@
-export const useInitiativ = defineStore('initiativ', {
+export const useInitiative = defineStore('initiative', {
     state: () => ({
         units: [
             {
                 name: 'Red Guard',
-                initiativ: 100,
+                initiative: 99,
             },
             {
                 name: 'Demolitionist',
-                initiativ: 100,
+                initiative: 99,
             },
             {
                 name: 'Void Warden',
-                initiativ: 100,
+                initiative: 99,
             },
             {
                 name: 'Monster',
-                initiativ: 100,
+                initiative: 99,
             },
         ]
     }),

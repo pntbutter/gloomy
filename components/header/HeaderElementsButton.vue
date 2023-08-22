@@ -8,11 +8,13 @@ export default {
 </script>
 
 <template>
-    <button type="button" class="grid  place-content-center  w-16  h-16  rounded-full  border  border-current  uppercase  text-xs  tracking-wide" :class="{ 
-        'text-slate-500': value === -1, 
-        'text-amber-500': value === 0,
-        'text-green-500': value === 1,
-    }">
-        {{ element }}
+    <button type="button" class="relative  w-16  h-16">
+        <img :src="'/' + element + '.svg'" class="w-full">
+
+        <div class="absolute  inset-0  bg-slate-800  origin-top  transition  opacity-75  pointer-events-none" :class="{ 
+            'scale-y-100': value === -1, 
+            'scale-y-50': value === 0,
+            'scale-y-0': value === 1,
+        }"></div>
     </button>
 </template>

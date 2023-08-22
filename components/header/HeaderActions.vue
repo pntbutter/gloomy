@@ -3,7 +3,7 @@ export default {
     data() {
         return {
             elements: useElements(),
-            initiativ: useInitiativ(),
+            initiative: useInitiative(),
 
             decreaseElements() {
                 // decrease all the elements that are strong or waning
@@ -14,15 +14,15 @@ export default {
                 }
             },
 
-            resetInitiativ() {
-                this.initiativ.units.forEach((unit) => {
-                    unit.initiativ = 100;
+            resetInitiative() {
+                this.initiative.units.forEach((unit) => {
+                    unit.initiative = 99;
                 });
             },
 
             newRound() {
                 this.decreaseElements();
-                this.resetInitiativ();
+                this.resetInitiative();
             }
         }
     },
@@ -32,7 +32,7 @@ export default {
 <template>
     <div>
         <button type="button" @click="newRound" class="border  px-4  py-2.5  border-current">
-            Ny runda
+            New round
         </button>
     </div>
 </template>
