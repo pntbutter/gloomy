@@ -19,9 +19,7 @@ export default {
         </header>
 
         <div class="flex  divide-x  divide-slate-700  border-b  border-slate-700">
-            <Character name="Red Guard" />
-            <Character name="Demolitionist" />
-            <Character name="Void Warden" />
+            <CharacterUnits />
             <InitiativeList />
         </div>
     </div>
