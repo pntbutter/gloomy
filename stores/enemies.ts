@@ -3,7 +3,7 @@ export const useEnemies = defineStore('enemies', {
         types: [
             {
                 name: 'Meanie',
-                initiative: 44,
+                initiative: 99,
                 max_hp_normal: 8,
                 max_hp_elite: 12,
                 units: [
