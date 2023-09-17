@@ -4,7 +4,7 @@ export default {
         useHead({
             title: 'Gloomy',
             bodyAttrs: {
-                class: 'bg-slate-800  text-slate-100  overscroll-none'
+                class: 'bg-slate-800  text-slate-100'
             }
         })
     }
@@ -18,9 +18,17 @@ export default {
             <HeaderActions />
         </header>
 
-        <div class="flex  divide-x  divide-slate-700  border-b  border-slate-700">
+        <div class="grid  grid-cols-4  min-h-[380px]  divide-x  divide-slate-700  border-b  border-slate-700">
             <CharacterUnits />
             <InitiativeList />
         </div>
+
+        <EnemyTypes />
     </div>
 </template>
+
+<style>
+    button {
+        @apply touch-none;
+    }
+</style>

@@ -34,14 +34,14 @@ export default {
         </header>
 
         <div class="flex  flex-col  gap-4">
-            <div v-for="(unit, index) in initiative.units" class="flex  items-center  gap-2" :style="{ order: unit.initiative }">
+            <div v-for="(unit, index) in units" class="flex  items-center  gap-2" :style="{ order: unit.initiative }">
                 <span class="mr-auto  text-xl">{{ unit.name }}</span>
 
                 <input type="number" v-model="unit.initiative" min="1" max="99" class="w-16  px-4  py-2  bg-slate-900  rounded  text-xl  text-center  xl:w-20">
             </div>
         </div>
 
-        <div v-if="show_edit" class="absolute  inset-0  p-6  bg-slate-700">
+        <div v-if="show_edit" class="absolute  inset-0  p-6  bg-slate-700  border  border-slate-800">
             <header class="flex  items-center  justify-between  mb-6">
                 <h3 class="text-xl  font-bold">Edit initiative</h3>
 

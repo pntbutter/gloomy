@@ -3,7 +3,8 @@ export default {
     data() {
         return {
             elements: useElements(),
-            initiative: useInitiative(),
+            characters: useCharacters(),
+            enemies: useEnemies(),
 
             decreaseElements() {
                 // decrease all the elements that are strong or waning
@@ -15,8 +16,12 @@ export default {
             },
 
             resetInitiative() {
-                this.initiative.units.forEach((unit) => {
+                this.characters.units.forEach((unit) => {
                     unit.initiative = 99;
+                });
+
+                this.enemies.types.forEach((type) => {
+                    type.initiative = 99;
                 });
             },
 

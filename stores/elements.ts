@@ -14,7 +14,7 @@ export const useElements = defineStore('elements', {
     }),
 
     actions: {
-        handleChange(el: string) {
+        handle_change(el: string) {
             // typescript fiddling to access object property dynamically
             type ObjectKey = keyof typeof this.elements;
             const name = el as ObjectKey;
