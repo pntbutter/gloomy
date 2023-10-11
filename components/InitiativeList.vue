@@ -25,15 +25,7 @@ export default {
 
 <template>
     <div class="relative  grow  p-6  min-w-[30%]">
-        <header class="flex  items-center  justify-between  mb-6">
-            <h2 class="text-xl  font-bold">Initiative</h2>
-
-            <button @click="show_edit = !show_edit">
-                <IconEdit />
-            </button>
-        </header>
-
-        <div class="flex  flex-col  gap-4">
+        <div class="flex  flex-col  gap-2">
             <div v-for="(unit, index) in units" class="flex  items-center  gap-2" :style="{ order: unit.initiative }">
                 <span class="mr-auto  text-xl">{{ unit.name }}</span>
 

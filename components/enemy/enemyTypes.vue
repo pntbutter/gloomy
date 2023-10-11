@@ -13,7 +13,7 @@ export default {
         <EnemyType v-for="(enemy, index) in enemies.types" :enemy="enemy" :key="index" />
 
         <div class="grid  place-content-center  bg-slate-800" :class="{ 'col-span-2': enemies.types.length % 2 == 0 }">
-            <button type="button" @click="enemies.add_type()" class="flex  items-center  gap-2  p-4">
+            <button type="button" @click="enemies.add_type()" class="flex  items-center  gap-2  px-4  py-2.5  rounded  bg-slate-700">
                 <IconPlus /> Add new enemy type
             </button>
         </div>

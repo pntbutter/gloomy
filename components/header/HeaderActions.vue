@@ -36,7 +36,7 @@ export default {
 
 <template>
     <div>
-        <button type="button" @click="newRound" class="border  px-4  py-2.5  border-current">
+        <button type="button" @click="newRound" class="px-4  py-2.5  rounded  bg-slate-700">
             New round
         </button>
     </div>
