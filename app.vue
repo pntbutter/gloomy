@@ -31,4 +31,12 @@ export default {
     button {
         @apply touch-none;
     }
+
+    .fade-in {
+        animation: fade-in .25s;
+    }
+    @keyframes fade-in {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 </style>

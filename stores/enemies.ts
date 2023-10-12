@@ -51,5 +51,9 @@ export const useEnemies = defineStore('enemies', {
                 ],
             })
         },
+
+        remove_type(index: number) {
+            this.types.splice(index, 1);
+        }
     },
 })
