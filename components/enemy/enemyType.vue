@@ -44,8 +44,8 @@ export default {
             <EnemyTypeUnit v-for="(unit, index) in enemy.units" :unit="unit" :enemy="enemy" :index="index" :key="index" />
         </div>
 
-        <div v-if="show_edit" class="fixed  z-40  inset-0  grid  place-content-center  p-6  bg-slate-800/70  backdrop-blur-md  fade-in">
-            <div class="flex  flex-col  gap-3  p-6  rounded  bg-slate-800  border-2  border-slate-600  shadow-xl">
+        <div v-if="show_edit" @click="show_edit = false" class="modal-wrap">
+            <div @click.stop class="modal-content">
                 <header class="flex  items-center  justify-between  pb-3">
                     <h3 class="text-xl  font-bold">Edit {{ enemy.name }}</h3>
 
