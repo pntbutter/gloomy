@@ -115,6 +115,11 @@ export default {
                     <span>Max HP:</span>
                     <input type="number" v-model="char.max_hp" class="col-span-2  px-4  py-2  rounded  bg-slate-900">
                 </label>
+
+                <label class="grid  grid-cols-3  items-center  gap-3">
+                    <span>Color:</span>
+                    <input type="color" v-model="char.color" class="col-span-2">
+                </label>
             </div>
         </div>
     </div>

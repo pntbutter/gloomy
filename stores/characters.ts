@@ -8,6 +8,7 @@ export const useCharacters = defineStore('characters', {
                 max_hp: 10,
                 xp: 0,
                 conditions: [],
+                color: '#fff',
             },
             {
                 name: 'Drifter',
@@ -16,6 +17,7 @@ export const useCharacters = defineStore('characters', {
                 max_hp: 10,
                 xp: 0,
                 conditions: [],
+                color: '#fff',
             },
             {
                 name: 'Boneshaper',
@@ -24,7 +26,9 @@ export const useCharacters = defineStore('characters', {
                 max_hp: 10,
                 xp: 0,
                 conditions: [],
+                color: '#fff',
             },
         ]
     }),
+    persist: true,
 })

@@ -69,6 +69,11 @@ export default {
                     <input type="number" v-model="enemy.max_hp_elite" class="col-span-2  px-4  py-2  rounded  bg-slate-900">
                 </label>
 
+                <label class="grid  grid-cols-3  items-center  gap-3">
+                    <span>Color:</span>
+                    <input type="color" v-model="enemy.color" class="col-span-2">
+                </label>
+
                 <h3 class="mt-8  text-xl  font-bold">Units</h3>
 
                 <div class="flex  flex-wrap  gap-4">

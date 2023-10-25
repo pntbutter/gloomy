@@ -13,6 +13,7 @@ export const useEnemies = defineStore('enemies', {
                         conditions: [],
                     },
                 ],
+                color: '#262F40',
             },
             {
                 name: 'Vermling Scout',
@@ -31,9 +32,11 @@ export const useEnemies = defineStore('enemies', {
                         conditions: [],
                     },
                 ],
+                color: '#262F40',
             },
         ]
     }),
+    persist: true,
 
     actions: {
         add_type() {
@@ -49,6 +52,7 @@ export const useEnemies = defineStore('enemies', {
                         conditions: [],
                     },
                 ],
+                color: '#262F40',
             })
         },
 

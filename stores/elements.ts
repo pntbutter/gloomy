@@ -12,6 +12,7 @@ export const useElements = defineStore('elements', {
             light: -1,
         }
     }),
+    persist: true,
 
     actions: {
         handle_change(el: string) {
